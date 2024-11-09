@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+    <title>Lab 9</title>
+</head>
+<body>
+    <div class="container">
+        <table class="calculator">
+            <tr>
+                <td colspan="5">
+                    <input type="text" id="result" class="result" value="">
+                    <input type="text" id="result-gray" class="result-gray" value="">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="addNumber(this)"></td>
+                <td><input type="button" value="8" onclick="addNumber(this)"></td>
+                <td><input type="button" value="9" onclick="addNumber(this)"></td>
+                <td><input type="button" value="/" onclick="addOperation(this)"></td>
+                <td><input type="button" value="C" onclick="resetResult()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addNumber(this)"></td>
+                <td><input type="button" value="5" onclick="addNumber(this)"></td>
+                <td><input type="button" value="6" onclick="addNumber(this)"></td>
+                <td><input type="button" value="*" onclick="addOperation(this)"></td>
+                <td><input type="button" value="<-" onclick="deleteLastNum()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="addNumber(this)"></td>
+                <td><input type="button" value="2" onclick="addNumber(this)"></td>
+                <td><input type="button" value="3" onclick="addNumber(this)"></td>
+                <td><input type="button" value="-" onclick="addOperation(this)"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="equals()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" onclick="addNumber(this)"></td>
+                <td><input type="button" value="." onclick="addDot()"></td>
+                <td><input type="button" value="+" onclick="addOperation(this)"></td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+</html>
